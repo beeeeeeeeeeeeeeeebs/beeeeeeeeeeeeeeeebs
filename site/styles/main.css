@@ -1,25 +1,152 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  .width-wrap {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 2em 2em;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-top: none;
-    margin-bottom: 3em;
+  box-sizing: border-box;
 }
 
-    footer hr {
-        width: 50vw;
-        min-width: 300px;
-        max-width: 890px;
-        margin: 3em auto 2em;
-        border: none;
-        border-bottom: 3px dotted #444;
-    }
-    dt::after {
-        content: ":"; /* Adds a colon after each term */
-      }
-      
+.width-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 2em 2em;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: none;
+  margin-bottom: 3em;
+}
+
+footer hr {
+  width: 50vw;
+  min-width: 300px;
+  max-width: 890px;
+  margin: 3em auto 2em;
+  border: none;
+  border-bottom: 3px dotted #444;
+}
+
+dt::after {
+  content: ":";
+  /* Adds a colon after each term */
+}
+
+body {
+  background-color: #AE7996;
+  /* Light gray background */
+  color: #753558;
+  /* Dark gray text */
+}
+
+.width-wrap {
+  background-color: #E4D1DB;
+  /* White background */
+}
+
+h1,
+h2,
+h3 {
+  color: #753558;
+  /* Dark blue for headings */
+}
+
+a {
+  color: #81e2ff;
+  /* Blue hyperlinks */
+}
+
+header a {
+  color: #CCA7BC;
+  /* White links in header */
+}
+
+::selection {
+  background-color: #f29ce1;
+  color: rgb(47, 40, 56);
+}
+
+header {
+  border-top: 4px solid rgba(0, 0, 0, 0.1);
+  margin-left: -2em;
+  margin-right: -2em;
+}
+
+header nav {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 0.5em;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 1em;
+}
+
+header nav ul li a {
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  color: #ffffff;
+  border-top: 4px solid transparent;
+}
+
+header nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-top-color: 4px #0073ff;
+}
+
+table th,
+table td {
+  padding: 0.3em 1em;
+}
+
+thead th,
+tfoot th,
+tbody th {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+tbody td {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+tbody tr:nth-child(even) td {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+input[type="checkbox"]+label,
+input[type="radio"]+label {
+  display: inline;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  border: none;
+  padding: 1em 3em;
+  background-color: #804570;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #47113e;
+}
+
+input:invalid {
+  background-color: rgba(255, 0, 0, 0.2);
+
+}
