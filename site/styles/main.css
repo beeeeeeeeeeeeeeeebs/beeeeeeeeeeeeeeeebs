@@ -12,6 +12,11 @@
   margin-bottom: 3em;
 }
 
+footer {
+  font-size: 75%;
+  text-align: center;
+}
+
 footer hr {
   width: 50vw;
   min-width: 300px;
@@ -19,6 +24,14 @@ footer hr {
   margin: 3em auto 2em;
   border: none;
   border-bottom: 3px dotted #444;
+}
+
+footer a.back-to-top {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer a.back-to-top:hover {
+  text-decoration: none;
 }
 
 dt::after {
@@ -35,7 +48,7 @@ body {
 
 .width-wrap {
   background-color: #E4D1DB;
-  /* White background */
+
 }
 
 h1,
@@ -45,9 +58,29 @@ h3 {
   /* Dark blue for headings */
 }
 
+h1 {
+  background: rgb(98, 96, 125);
+  background: linear-gradient(90deg,
+      rgba(98, 96, 125, 1) 0%,
+      rgba(147, 121, 140, 1) 58%,
+      rgba(222, 225, 226, 1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+}
+
 a {
-  color: #81e2ff;
-  /* Blue hyperlinks */
+
+  text-decoration: none;
+  color: #ff0059;
+  /* Light blue for links */
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #d396fb;
+
 }
 
 header a {
@@ -93,7 +126,7 @@ header nav ul li a {
 
 header nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  border-top-color: 4px #0073ff;
+  border-top-color: 4px #b46fa8;
 }
 
 table th,
@@ -149,4 +182,93 @@ input[type="submit"]:hover {
 input:invalid {
   background-color: rgba(255, 0, 0, 0.2);
 
+}
+
+body {
+  font-family: 'Lustria', serif;
+  line-height: 1.3;
+  /* Improves readability */
+}
+
+/* Apply Silkscreen to all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Silkscreen', sans-serif;
+}
+
+.video-container iframe {
+  border-radius: 2em 0 2em 0;
+  overflow: hidden;
+}
+
+
+ol {
+  list-style-type: upper-roman;
+}
+
+fieldset ul {
+  padding: 0;
+  margin: 0;
+}
+
+fieldset ul li {
+  list-style-type: none;
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+.bio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  align-items: start;
+}
+
+.bio a,
+.bio p {
+  width: 100%;
+}
+
+.bio table {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 1em;
+  border-collapse: collapse;
+}
+
+.bio table th,
+.bio table td {
+  border: 1px solid black;
+  padding: 0.5em;
+}
+
+.bio table caption {
+  caption-side: bottom;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+.bio a img {
+  padding: 2%;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

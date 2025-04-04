@@ -15,8 +15,34 @@
     <html lang="en">
 
     <link rel="stylesheet" href="styles/normalize.css">
-<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Silkscreen:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        ui.useful-links {
+            list-style: none;
+            margin: 0;
+            padding-left: 1em;
+        }
+
+        ul.useful-links li {
+            padding-left: 1em;
+            background-image: url("images/link.png");
+            background-size: 10px 10px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            margin-bottom: 0.5em;
+
+        }
+    </style>
 
 
 </head>
@@ -33,11 +59,13 @@
             </nav>
         </header>
         <main>
+
             <h1>Useful links</h1>
-            <ul>
+            <ul class="useful-links">
                 <li>
                     <a href="https://validator.w3.org/" title="Check your HTML for errors" target="_blank">
                         W3C HTML validator
+                    </a>
                 </li>
                 <li>
                     <a href="https://realfavicongenerator.net/" title="Generate favicons for your website"
@@ -48,6 +76,7 @@
                 <li>
                     <a href="https://placeholder.com/" title="placeholder tool" target="_blank">
                         website placeholder
+                    </a>
                 </li>
             </ul>
         </main>
