@@ -63,7 +63,7 @@ h1 {
   background: linear-gradient(90deg,
       rgba(98, 96, 125, 1) 0%,
       rgba(147, 121, 140, 1) 58%,
-      rgba(222, 225, 226, 1) 100%);
+      rgb(160, 96, 128) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -109,10 +109,13 @@ header nav {
 header nav ul {
   margin: 0;
   padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul li {
-  display: inline;
+  
   margin-right: 1em;
 }
 
@@ -271,4 +274,90 @@ nav a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.favourites {
+  display: flex;
+  flex-wrap: wrap;
+}
+.favourites input[type="radio"] {
+  display: none;
+}
+.favourites label {
+  cursor: pointer;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  background-color: #eee;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+.favourites label:hover {
+  background-color: #ddd;
+}
+.favourites input:checked + label {
+  background-color: #ccc;
+  font-weight: bold;
+}
+.favourites > label + div {
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  width: 100%;
+}
+.favourites input:checked + label + div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.gallery img {
+width: 100%;
+  height: 100%;
+ display: block;
+ object-fit: cover;
+}
+.row-span-2 {
+  grid-row: span 2;
+}
+.col-span-2 {
+  grid-column: span 2;
+}
+.gallery a:hover {
+ transform: scale(1.1); 
+}
+
+.selfie-container {
+  position: relative;
+  display: inline-block;
+}
+
+.selfie-container .paperclip {
+  position: absolute;
+  top: -10px;                             
+  right: -20px;
+  width: 20%; 
+  height: auto;
+  background: none; 
+  box-shadow: none;
+  transform: rotate(-20deg);
+}
+
+.back-to-top {
+  position: sticky;
+  bottom: 10px;
+  margin-left: -25px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.back-to-top:hover {
+  transform: rotate(45deg);
 }

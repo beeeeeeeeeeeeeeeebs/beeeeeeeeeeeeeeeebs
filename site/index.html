@@ -38,19 +38,22 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
                     <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="survey.html">Survey</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <h1> Welcome to Ada's Website!</h1>
-            <h1>My Bio</h1>
+            <h2>My Bio</h2>
             <div class="bio">
 
-                <a href="images/Untitled57_20250206110727.png" target="_blank">
+                <a href="images/Untitled57_20250206110727.png" target="_blank" class="selfie-container">
                     <picture>
                         <source srcset="images/Untitled58_20250206115619.png" media="(max-width: 500px)">
                         <img src="images/Untitled59_20250206115708.png" alt="A picture of me">
                     </picture>
+                    <img src="images/paperclip.png" alt="Paperclip" class="paperclip">
                 </a>
                 <p>
                     Hello, my name is Ada Knutson. I enjoy drawing and crocheting as hobbies. I also like to play video
@@ -141,28 +144,46 @@
                 </table>
             </div>
 
+            
+
             <h2>My Favourite things</h2>
+            <div class="favourites">
+
+                <input type="radio" name="tabset" id="tab1" checked>
+                <label for="tab1">image</label>
+               <div>
             <figure>
                 <a href=https://store.steampowered.com/ target="_blank">
-                    <img src="images/Steam-Logo-PNG.png" alt="Steam logo">
+                    <img src="images/Steam-Logo-PNG.png" alt="Steam logo" width="200" height="200">
                 </a>
                 <figcaption> Open steam page </figcaption>
             </figure>
+        </div>
 
+        <input type="radio" name="tabset" id="tab2">
+        <label for="tab2">Favourite Games</label>
+        <div>
             <h3>Favourite games:</h3>
             <ol>
                 <li> Red Dead Redemtion 2</li>
                 <li> The Last of us (Part 1)</li>
                 <li> Valorant</li>
             </ol>
+        </div>
+        <input type="radio" name="tabset" id="tab3">
+        <label for="tab3">Haiku</label>
 
-            <h3>Haiku</h3>
+        <div>
             <p>
                 I write, erase, rewrite <br>
                 Erase again, and then<br>
                 A poppy blooms.<br>
                 <cite> By <span class="author">Katsushika Hokusai</span></cite>
             </p>
+        </div>
+        <input type="radio" name="tabset" id="tab4">
+        <label for="tab4">Audio Book</label>
+        <div>
 
             <h3> Public Domain Audiobook</h3>
             <audio controls>
@@ -173,7 +194,11 @@
                 <a href="https://www.archive.org/download/gentlemenpreferblondes_2201_librivox/gentlemenpreferblondes_2201_librivox_64kb_mp3.zip"
                     download> Click here to download the audio book (zip) </a>
             </audio>
+        </div>
 
+        <input type="radio" name="tabset" id="tab5">
+        <label for="tab5">Video</label>
+        <div>
             <h3>YouTube Video</h3>
             <div>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/3TspnI57LxU?si=n8nRsFxuAabAILiA"
@@ -182,6 +207,8 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
             </div>
+
+        </div>
 
 
         </main>
@@ -205,7 +232,7 @@
 
             </picture>
         </footer>
-        <a href="#top" title="Back to top">⬆ Back to top</a>
+        <a href="#top" class="back-to-top">⬆ Back to top</a>
     </div>
 </body>
 
