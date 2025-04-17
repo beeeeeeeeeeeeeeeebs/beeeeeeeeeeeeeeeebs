@@ -34,8 +34,29 @@
         footer {
             clear: both;
         }
+        
+.float-left {
+  float: left;
+  margin-right: 1em;
+}
+
+.float-right {
+  float: right;
+  margin-left: 1em;
+}
+
+@media (max-width: 600px) {
+  .float-left,
+  .float-right {
+    float: none;
+    display: block;
+    margin: 1em auto;
+  }
+}
+
     </style>
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 </head>
@@ -44,6 +65,8 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="sandwich-icon"></label>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
@@ -76,7 +99,7 @@
                     Mauris a nibh quis nibh tristique luctus eget facilisis nulla.
                 </p>
                 <p>
-                    <img src="https://loremflickr.com/320/240/city" style="float: right;">
+                    <img src="https://loremflickr.com/320/240/city" class="float-right">
 
                 </p>
                 <p>
@@ -105,7 +128,7 @@
                     Aenean fringilla ut felis gravida posuere.
                 </p>
                 <p>
-                    <img src="https://loremflickr.com/320/240/dog" style="float: left;">
+                    <img src="https://loremflickr.com/320/240/dog" class="float-left">
 
                 </p>
                 <p>
